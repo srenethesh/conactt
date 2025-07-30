@@ -1,0 +1,13 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(247, 241, 241, 0.87);
+  background-color: #000000;
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
