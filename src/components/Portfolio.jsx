@@ -54,7 +54,7 @@ const fadeUpVariant = {
     y: 0,
     transition: {
       delay: i * 0.1,
-      duration: 0.6,
+      duration: 0.2,
       ease: "easeOut",
     },
   }),
@@ -67,7 +67,7 @@ const Portfolio = () => {
         className="text-4xl font-bold text-center mb-12"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.3 }}
         viewport={{ once: true }}
       >
         Our Work

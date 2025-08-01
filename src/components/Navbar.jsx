@@ -21,7 +21,7 @@ const Navbar = () => {
       className="flex w-full"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
       <div
         className={`fixed top-5 left-1/2 -translate-x-1/2 w-[60%] max-w-[1200px] h-14 z-50 flex items-center justify-between rounded-full px-6 py-4 border transition-all duration-300 

@@ -70,69 +70,6 @@ const Testimonials = () => {
           </div>
         ))}
       </motion.div>
-
-      <motion.div
-        className="flex gap-6"
-        animate={{
-          x: ["-50%", "0%"],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 20,
-          ease: "linear",
-        }}
-      >
-        {[...testimonials, ...testimonials].map((client, i) => (
-          <div
-            key={i}
-            className="min-w-[300px] max-w-sm bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-xl"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <img
-                src={client.image}
-                alt={client.name}
-                className="w-12 h-12 rounded-full object-cover border border-indigo-500"
-              />
-              <div>
-                <h4 className="font-semibold">{client.name}</h4>
-                <p className="text-sm text-gray-400">{client.role}</p>
-              </div>
-            </div>
-            <p className="text-gray-300 text-sm">“{client.quote}”</p>
-          </div>
-        ))}
-      </motion.div>
-      <motion.div
-        className="flex gap-6"
-        animate={{
-          x: ["0%", "-50%"],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 20,
-          ease: "linear",
-        }}
-      >
-        {[...testimonials, ...testimonials].map((client, i) => (
-          <div
-            key={i}
-            className="min-w-[300px] max-w-sm bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 shadow-xl"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <img
-                src={client.image}
-                alt={client.name}
-                className="w-12 h-12 rounded-full object-cover border border-indigo-500"
-              />
-              <div>
-                <h4 className="font-semibold">{client.name}</h4>
-                <p className="text-sm text-gray-400">{client.role}</p>
-              </div>
-            </div>
-            <p className="text-gray-300 text-sm">“{client.quote}”</p>
-          </div>
-        ))}
-      </motion.div>
     </div>
       
     </section>
