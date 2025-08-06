@@ -6,7 +6,7 @@ const testimonials = [
     name: "Yuvaraj",
     role: "Founder, YuvaProDesigns",
     quote:
-      "Working with Conactt was a game-changer. Our new site looks incredible and our traffic doubled in a month!",
+      "Working with Conact was a game-changer. Our new site looks incredible and our traffic doubled in a month!",
     image: "/yuvaraj.png",
   },
   {
