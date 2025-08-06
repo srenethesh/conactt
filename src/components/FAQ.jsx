@@ -41,7 +41,7 @@ const FAQ = () => {
       <motion.h2
         className="text-4xl font-bold text-center mb-12"
         initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView ={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}
         viewport={{ once: true }}
       >
@@ -52,10 +52,10 @@ const FAQ = () => {
         {faqs.map((faq, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{ delay: index * 0.04 }}
+            viewport={{once: true}}
           >
             <div
               onClick={() => toggleFAQ(index)}

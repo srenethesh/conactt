@@ -48,13 +48,13 @@ const projects = [
 ];
 
 const fadeUpVariant = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 20 },
   visible: (i = 1) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.1,
-      duration: 0.2,
+      delay: i * 0.03,
+      duration: 0.1,
       ease: "easeOut",
     },
   }),
@@ -65,9 +65,9 @@ const Portfolio = () => {
     <section className="pt-32 pb-20 px-6 max-w-7xl mx-auto text-white">
       <motion.h2
         className="text-4xl font-bold text-center mb-12"
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.2 }}
         viewport={{ once: true }}
       >
         Our Work
@@ -81,7 +81,7 @@ const Portfolio = () => {
             variants={fadeUpVariant}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
             custom={index}
           >
             <img
